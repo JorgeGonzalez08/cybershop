@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(87, 168, 222);
+}
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.form{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input{
+    outline: none;
+    padding: .5rem;
+}
+
+.button{
+    padding: .5rem;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.cards{
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.card{
+    padding: 1rem;
+    border:1px solid ;
+    display: flex;
+    flex-direction: column;
+
+}
