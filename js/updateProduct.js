@@ -6,13 +6,13 @@ let p=document.getElementById('id')
 // p.textContent=productId
 
 async function fetchApi(){
-    let res = await fetch(`http://localhost:3000/api/products/${productId}`)
+    let res = await fetch(`https://cybershop-backend-production.up.railway.app/api/products/${productId}`)
     let data = await res.json()
     return data.payload
 }
 
 let update =async (title,code,price,stock) => {
-    let res = await fetch(`http://localhost:3000/api/products/${productId}`,{
+    let res = await fetch(`https://cybershop-backend-production.up.railway.app/api/products/${productId}`,{
         method:"put",
         headers:{
             'Content-Type':'application/json'

@@ -5,12 +5,12 @@ let price = document.getElementById('price')
 let stock = document.getElementById('stock')
 
 async function fetchApi(){
-    let res = await fetch('http://localhost:3000/api/products')
+    let res = await fetch('https://cybershop-backend-production.up.railway.app/api/products')
     let data = await res.json()
     return data
 }
 let sendProducts=async (title,code,price,stock) => {
-    let res = await fetch('http://localhost:3000/api/products',{
+    let res = await fetch('https://cybershop-backend-production.up.railway.app/api/products',{
         method:"post",
         headers:{
             'Content-Type':'application/json'
@@ -28,7 +28,7 @@ let sendProducts=async (title,code,price,stock) => {
 }
 
 let deteleProduct=async (id) => {
-    let res= await fetch(`http://localhost:3000/api/products/${id}`,{
+    let res= await fetch(`https://cybershop-backend-production.up.railway.app/api/products/${id}`,{
         method:'delete'
     })
     let data = await res.json()
