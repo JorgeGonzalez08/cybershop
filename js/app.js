@@ -56,7 +56,7 @@ fetchApi()
             const updateButton = document.createElement('a')
             updateButton.classList='button'
             updateButton.textContent='Modificar'
-            updateButton.href=`/pages/update.html?id=${product._id}`
+            updateButton.href=`../pages/update.html?id=${product._id}`
             // updateButton.onclick=() => updateProduct(product._id)
 
             let card = document.createElement('div')
