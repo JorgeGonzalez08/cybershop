@@ -53,10 +53,10 @@ fetchApi()
             deleteButton.textContent='Eliminar'
             deleteButton.onclick=()=>deteleProduct(product._id)
 
-            const updateButton = document.createElement('a')
-            updateButton.classList='button'
-            updateButton.textContent='Modificar'
-            updateButton.href=`./pages/update.html?id=${product._id}`
+            // const updateButton = document.createElement('a')
+            // updateButton.classList='button'
+            // updateButton.textContent='Modificar'
+            // updateButton.href=`./pages/update.html?id=${product._id}`
             // updateButton.onclick=() => updateProduct(product._id)
 
             let card = document.createElement('div')
@@ -65,9 +65,10 @@ fetchApi()
                 `<h2>${product.title}</h2>
                 <p>Code: ${product.code}</p>
                 <p>Price: $${product.price}</p>
-                <p>Stock: ${product.stock}</p>`
+                <p>Stock: ${product.stock}</p>
+                <a class="button" href="pages/update.html?id=${product._id}">Modificar</a>`
                 card.appendChild(deleteButton)
-                card.appendChild(updateButton)
+                // card.appendChild(updateButton)
                 
             cards.appendChild(card)
         });
